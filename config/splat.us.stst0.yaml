@@ -14,7 +14,6 @@ options:
   undefined_syms_auto_path:  config/undefined_syms_auto.us.stst0.txt
   find_file_boundaries: yes
   use_legacy_include_asm: no
-  # migrate_rodata_to_functions: yes
   asm_jtbl_label_macro: jlabel
   extensions_path: tools/splat_ext
   section_order:
