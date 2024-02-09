@@ -59,8 +59,8 @@ def apply_psx_weapon(config, version, name):
 
 
 def apply_psx_stage(config, version, name):
-    config["baseimg"] = f"disks/{version}" + (f"ST/{name}/{name}.BIN").upper()
-    config["myimg"] = f"build/{version}" + (f"{name}.bin").upper()
+    config["baseimg"] = f"disks/{version}/" + (f"ST/{name}/{name}.BIN").upper()
+    config["myimg"] = f"build/{version}/" + (f"{name}.bin").upper()
     config["mapfile"] = f"build/{version}/st{name}.map"
     config["source_directories"] = [
         f"src/st/{name}",

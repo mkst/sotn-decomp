@@ -5,6 +5,7 @@
 
 #include "st0.h"
 
+
 void EntityDracula(Entity* self) {
     s16 primIndex;
     Entity* newEntity;
@@ -798,7 +799,7 @@ extern s32 D_80181148;
 extern u32 D_8018114C;
 extern s8 D_801A7B7C;
 extern s32 D_801C2578;
-
+#if 0
 void EntityDraculaFinalForm(Entity* self) {
     byte stackpad[56];
     Entity* temp_s2;
@@ -847,7 +848,7 @@ void EntityDraculaFinalForm(Entity* self) {
                 var_s1->params = i;
                 var_s1->unk60 = temp_s2 - 1;
                 var_s1->unk5C = self;
-                
+
                 var_s1->zPriority = selfzPriority + 2;
                 var_s1->hitPoints = 0x7FFE;
             }
@@ -1331,6 +1332,7 @@ void EntityDraculaFinalForm(Entity* self) {
         break;
     case 0xFF:                                      /* switch 4 */
         FntPrint("charal %x\n", self->animCurFrame);
+
         if (g_pads[1].pressed & 0x80) {
             //uncomment to add eight 00 bytes
             //const char* pad_data = "";
@@ -1353,9 +1355,11 @@ void EntityDraculaFinalForm(Entity* self) {
         }
         break;
     }
-    
-}
 
+}
+#else
+INCLUDE_ASM("st/st0/nonmatchings/2C564", EntityDraculaFinalForm);
+#endif
 
 void EntityDraculaMegaFireball(Entity* self) {
     s16 angle;
@@ -1559,6 +1563,7 @@ void func_801AF6D0(void) {
     }
 }
 
+#if 0
 void func_801AF774(Entity* self) {
     RECT sp10;
     DRAWENV sp18;
@@ -1813,3 +1818,6 @@ void func_801AF774(Entity* self) {
         break;
     }
 }
+#else
+INCLUDE_ASM("st/st0/nonmatchings/2C564", func_801AF774);
+#endif

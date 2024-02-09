@@ -265,6 +265,8 @@ void func_801B6C5C(Entity* entity) {
 
 INCLUDE_ASM("st/st0/nonmatchings/36358", EntityEquipItemDrop);
 
+const char D_801A7CC4[] = "\202\360\223\374\216\350\202\265\202\275\000\000";
+
 INCLUDE_ASM("st/st0/nonmatchings/36358", func_801B7308);
 
 u8 func_801B7B0C(s16* arg0, u8 facing) {

@@ -38,7 +38,7 @@ extern const char* D_801A7984;
 extern const char* D_801A7990;
 extern const char* D_801A799C;
 
-extern s8 c_HeartPrizes[10];
+extern const s8 c_HeartPrizes[6];
 
 extern PfnEntityUpdate PfnEntityUpdates[];
 extern bool g_isSecretStairsButtonPressed;

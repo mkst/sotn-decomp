@@ -5,6 +5,10 @@
 
 #include "st0.h"
 
+// fixme
+const char D_801A79E8[] = "$RACULA\377";
+const char D_801A79F4[] = "2ICHTER\377";
+
 void func_801A8BF8(void) {
     Primitive* prim;
 
@@ -185,6 +189,7 @@ void func_801AA218(s16 arg0) {
     }
 }
 
+#if 0
 void EntityCutscene(Entity* self) {
     Tilemap* tilemap = &g_Tilemap;
     Entity* player = &PLAYER;
@@ -383,3 +388,6 @@ void EntityCutscene(Entity* self) {
         break;
     }
 }
+#else
+INCLUDE_ASM("st/st0/nonmatchings/28BF8", EntityCutscene);
+#endif

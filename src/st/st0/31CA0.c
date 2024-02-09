@@ -810,3 +810,5 @@ Entity* func_801B633C(void) {
     g_CurrentEntity->params = 4;
     return g_CurrentEntity;
 }
+
+const s8 c_HeartPrizes[] = {1, 5, 0, 0, 1, 2};

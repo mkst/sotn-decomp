@@ -65,3 +65,4 @@ EntityCutscenePhotographFire = 0x801BC4D0;
 EntityBackgroundVortex = 0x801BE1B4;
 g_Dialogue = 0x801C24CC;
 g_ItemIconSlots = 0x801C2584;
+PrimDecreaseBrightness = 0x801BD88C;
