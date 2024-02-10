@@ -43,6 +43,7 @@ segments:
       - [0x1A750, data]
       - [0x27984, .rodata, 27D64]
       - [0x279E8, .rodata, 28BF8]
+      - [0x27A74, .rodata, 2A218]
       - [0x27AB4, .rodata, 2A8DC] # EntitySecretButton
       - [0x27AE0, .rodata, 2B0C8] # EntityStageTitleFadeout
       - [0x27B40, .rodata, 2C564] # EntityDracula
@@ -53,7 +54,8 @@ segments:
       - [0x27D3C, .rodata, prim_helpers]
       - [0x27D44, .rodata, 3D8F0]
       - [0x27D64, c]
-      - [0x28BF8, c] # Dracula Cutscene
+      - [0x28BF8, c] # EntityDialogue
+      - [0x2A218, c] # EntityCutscene
       - [0x2A8DC, c]
       - [0x2B0C8, c]
       - [0x2C564, c] # EntityDracula
