@@ -8,10 +8,10 @@ from typing import Optional
 from pathlib import Path
 
 sys.path.append(f"{os.getcwd()}/tools/n64splat")
+from src.splat.util import options, log
+from src.splat.segtypes.n64.segment import N64Segment
+
 sys.path.append(f"{os.getcwd()}/tools/splat_ext")
-from util import options, log
-from segtypes.n64.segment import N64Segment
-from util.symbols import spim_context
 import utils
 
 

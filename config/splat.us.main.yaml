@@ -22,6 +22,7 @@ options:
     - ".rodata"
     - ".text"
     - ".data"
+    - ".bss"
 segments:
   - [0x800, header]
   - name: main

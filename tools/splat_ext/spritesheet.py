@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import argparse
-import io, hashlib, hmac
+import hashlib
 import json
 import os
 import png
@@ -13,8 +13,10 @@ import n64img.image
 
 sys.path.append(f"{os.getcwd()}/tools/n64splat")
 sys.path.append(f"{os.getcwd()}/tools/splat_ext")
-from util import options, log
-from segtypes.n64.segment import N64Segment
+
+from src.splat.util import options, log
+from src.splat.segtypes.n64.segment import N64Segment
+
 import utils
 
 max_width = 256
@@ -210,7 +212,7 @@ def decode_spritesheet(out_path, data: bytearray, start: int, palette) -> list:
         sprite_data = data[off:]
         w = sprite_data[0]
         h = sprite_data[1]
-        print(f"size: ({w}, {h})")
+        # print(f"size: ({w}, {h})")
         item = {"x": sprite_data[2], "y": sprite_data[3], "name": name}
 
         sprite_byte_count = int((w * h + 1) / 2)

@@ -1,7 +1,8 @@
 from itertools import zip_longest
 from math import ceil
 from typing import List, Tuple
-from segtypes.n64.palette import N64SegPalette
+
+from src.splat.segtypes.n64.palette import N64SegPalette
 
 
 # ABBBBBGG GGGRRRRR

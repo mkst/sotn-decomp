@@ -24,6 +24,7 @@ options:
     - ".rodata"
     - ".text"
     - ".sbss"
+    - ".bss"
 segments:
   - name: stst0
     type: code

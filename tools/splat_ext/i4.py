@@ -1,6 +1,4 @@
-import n64img.image
-
-from segtypes.n64.i4 import N64SegI4
+from src.splat.segtypes.n64.i4 import N64SegI4
 
 
 class PSXSegI4(N64SegI4):
