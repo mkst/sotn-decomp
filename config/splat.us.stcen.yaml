@@ -39,6 +39,7 @@ segments:
       - [0xD42C, rodata]
       - [0xD4B0, .rodata, D600]
       - [0xD4D8, rodata]
+      - [0xD538, rodata]
       - [0xD578, .rodata, entity_relic_orb]
       - [0xD5B0, .rodata, entity_message_box]
       - [0xD5C4, .rodata, 18084] # EntityStageNamePopup

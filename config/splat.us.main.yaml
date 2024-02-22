@@ -37,8 +37,10 @@ segments:
       - [0x9C8, rodata]
       - [0xA10, .rodata, psxsdk/libgpu/sys]
       - [0xB60, rodata]
+      - [0xC80, rodata]
       - [0xC94, rodata] # jpt_800163F4
       - [0xD48, rodata]
+      - [0xD68, rodata]
       - [0xEB4, rodata]
       - [0xF18, rodata] # jpt_80019DE8
       - [0xF2C, rodata]

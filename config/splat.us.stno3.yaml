@@ -65,6 +65,7 @@ segments:
       - [0x37514, .rodata, 3FF00] # EntityDeath
       - [0x37564, .rodata, 3FF00] # EntityWargExplosionPuffOpaque
       - [0x37578, rodata]
+      - [0x375D8, rodata]
       - [0x375E0, .rodata, 46684] # EntityPrizeDrop
       - [0x37600, .rodata, 46684] # EntityEquipItemDrop
       - [0x37618, .rodata, entity_relic_orb]
@@ -72,6 +73,9 @@ segments:
       - [0x37664, .rodata, 48A84] # EntityStageNamePopup
       - [0x37698, rodata]
       - [0x376E8, rodata]
+      - [0x37704, rodata]
+      - [0x37738, rodata]
+      - [0x3775C, rodata]
       - [0x377A4, .rodata, 56264] # EntityBat
       - [0x377B8, .rodata, 564B0] # EntityZombie
       - [0x377CC, rodata] #g_UnkPrimHelperRot

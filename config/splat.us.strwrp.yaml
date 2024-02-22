@@ -40,6 +40,7 @@ segments:
       - [0x11AC, roomdef, g_Rooms]
       - [0x1228, data]
       - [0x8C88, rodata]
+      - [0x8D28, rodata]
       - [0x8D68, .rodata, entity_relic_orb]
       - [0x8DA0, .rodata, entity_message_box]
       - [0x8DB4, .rodata, 113A0] # EntityStageNamePopup
